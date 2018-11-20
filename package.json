@@ -29,5 +29,26 @@
   "private": true,
   "workspaces": [
     "packages/*"
-  ]
+  ],
+  "name": "neon-js",
+    "description": "<p align=\"center\">   <img     src=\"http://res.cloudinary.com/vidsy/image/upload/v1503160820/CoZ_Icon_DARKBLUE_200x178px_oq0gxm.png\"     width=\"125px;\"> </p>",
+    "version": "0.0.1",
+    "main": "jest.config.js",
+    "directories": {
+      "doc": "docs"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/sotatek-dev/neon-js.git"
+    },
+    "keywords": [
+      "neon"
+    ],
+    "author": "0",
+    "license": "ISC",
+    "bugs": {
+      "url": "https://github.com/sotatek-dev/neon-js/issues"
+    },
+    "homepage": "https://github.com/sotatek-dev/neon-js#readme"
+
 }
