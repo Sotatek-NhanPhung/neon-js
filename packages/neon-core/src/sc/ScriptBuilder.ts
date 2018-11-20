@@ -294,9 +294,7 @@ function retrieveAppCall(sb: ScriptBuilder): ScriptIntent {
         throw new Error(`Encounter unknown byte: ${b}`);
     }
   }
-  if (output.scriptHash === "") {
-    throw new Error("No Scripthash found!");
-  }
+  
   return output;
 }
 
