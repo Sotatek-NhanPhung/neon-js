@@ -118,7 +118,7 @@ export class ScriptBuilder extends StringStream {
     const scripts = [];
     while (!this.isEmpty()) {
       const a = retrieveAppCall(this);
-      if (a) {
+      if (a && a.scriptHash) {
         scripts.push(a);
       }
     }
@@ -279,6 +279,7 @@ function retrieveAppCall(sb: ScriptBuilder): ScriptIntent {
         break;
       case n === 102:
         sb.pter = sb.str.length;
+        return output;
         break;
       case n === 103:
         output.scriptHash = reverseHex(sb.read(20));
